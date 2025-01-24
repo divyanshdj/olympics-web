@@ -1,4 +1,3 @@
-import React from "react";
 import appImage from "../images/app.png"; // Make sure the path is correct
 
 const AppImageSection = () => {

@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import AppImageSection from "./AppImageSection.jsX";
+import AppImageSection from "./AppImageSection";
 
 const Footer = () => {
   return (
