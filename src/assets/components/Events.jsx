@@ -78,7 +78,7 @@ const Events = () => {
                 </div>
               </div>
               <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-                <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-lg font-medium transition-colors cursor-pointer">
                   Get Tickets
                 </button>
               </div>
@@ -87,7 +87,7 @@ const Events = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-gray-800 hover:bg-gray-900 transition-colors">
+          <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-gray-800 hover:bg-gray-900 transition-colors cursor-pointer">
             View All Events
           </button>
         </div>

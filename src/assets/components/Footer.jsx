@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
           
           <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-            <p>&copy; 2025 Dangal Arena Sports. All rights reserved.</p>
+            <p>&copy; 2024 Dangal Arena Sports. All rights reserved.</p>
             <div className="mt-2 space-x-4">
               <a href="#" className="hover:text-white">Privacy Policy</a>
               <a href="#" className="hover:text-white">Terms of Service</a>

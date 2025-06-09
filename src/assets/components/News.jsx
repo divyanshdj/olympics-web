@@ -78,7 +78,7 @@ const News = () => {
                 </div>
               </div>
               <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-                <button className="text-orange-500 hover:text-orange-600 font-medium text-sm">
+                <button className="text-orange-500 hover:text-orange-600 font-medium text-sm cursor-pointer">
                   Read Full Story →
                 </button>
               </div>
@@ -87,7 +87,7 @@ const News = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-gray-800 hover:bg-gray-900 transition-colors">
+          <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-gray-800 hover:bg-gray-900 transition-colors cursor-pointer">
             Load More News
           </button>
         </div>

@@ -59,6 +59,13 @@ const Live = () => {
               <p className="text-gray-600">
                 Experience live Kushti (traditional Indian wrestling) matches and more on Dangal Arena TV.
               </p>
+              <div className="mt-4 flex items-center text-sm text-gray-500">
+                <span className="flex h-3 w-3 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
+                </span>
+                <span className="ml-2">UPCOMING</span>
+              </div>
             </div>
           </div>
         </div>
@@ -81,7 +88,7 @@ const Live = () => {
                   <div className="mt-2">
                     <span className="font-medium">{match.team1}</span> vs <span className="font-medium">{match.team2}</span>
                   </div>
-                  <button className="mt-3 text-xs bg-orange-500 hover:bg-orange-600 text-white py-1 px-2 rounded">
+                  <button className="mt-3 text-xs bg-orange-500 hover:bg-orange-600 text-white py-1 px-2 rounded cursor-pointer">
                     Remind Me
                   </button>
                 </div>

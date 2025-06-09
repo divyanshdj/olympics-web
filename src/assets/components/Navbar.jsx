@@ -43,7 +43,7 @@ const Navbar = () => {
                 Live
               </a>
               <a
-                href="#videos"
+                href="#live"
                 className="text-gray-300 hover:text-orange-300 px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2 transition-colors"
               >
                 <FaVideo className="text-lg" />

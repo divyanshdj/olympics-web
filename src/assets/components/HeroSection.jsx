@@ -23,10 +23,10 @@ const HeroSection = () => {
             Follow India's journey in international sports events, celebrating our athletes' achievements and dedication.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-medium text-lg shadow-lg transform transition hover:scale-105">
+            <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-medium text-lg shadow-lg transform transition hover:scale-105 cursor-pointer">
               Watch Live
             </button>
-            <button className="bg-white hover:bg-gray-100 text-gray-800 px-8 py-3 rounded-lg font-medium text-lg shadow-lg transform transition hover:scale-105">
+            <button className="bg-white hover:bg-gray-100 text-gray-800 px-8 py-3 rounded-lg font-medium text-lg shadow-lg transform transition hover:scale-105 cursor-pointer">
               Upcoming Events
             </button>
           </div>
