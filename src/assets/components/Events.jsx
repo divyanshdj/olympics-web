@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { FaCalendarAlt, FaMapMarkerAlt, FaInfoCircle } from "react-icons/fa";
 
@@ -42,30 +43,56 @@ const events = [
 
 const Events = () => {
   return (
-    <div className="bg-blue-50 py-10 px-6 lg:px-12">
-      <h2 className="text-3xl font-bold text-blue-800 mb-8 text-center">
-        Upcoming Events 🗓️
-      </h2>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {events.map((event, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
-          >
-            <h3 className="text-xl font-semibold text-blue-700 flex items-center mb-2">
-              <FaInfoCircle className="text-orange-500 mr-2" /> {event.name}
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">{event.description}</p>
-            <p className="text-sm font-medium text-blue-600 flex items-center mb-2">
-              <FaCalendarAlt className="text-orange-500 mr-2" /> {event.date}
-            </p>
-            <p className="text-sm text-gray-500 flex items-center">
-              <FaMapMarkerAlt className="text-orange-500 mr-2" /> {event.address}
-            </p>
-          </div>
-        ))}
+    <section id="events" className="py-16 bg-gradient-to-br from-blue-50 to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            <span className="block">Upcoming Events</span>
+            <span className="block text-orange-500 text-4xl mt-2">🗓️</span>
+          </h2>
+          <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+            Mark your calendars for these exciting sports events across India
+          </p>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {events.map((event, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="p-6">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0 bg-orange-500 rounded-lg p-3">
+                    <FaCalendarAlt className="h-6 w-6 text-white" />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-bold text-gray-900">{event.name}</h3>
+                    <p className="text-sm text-orange-500">{event.date}</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-gray-600">{event.description}</p>
+                <div className="mt-6 flex items-center">
+                  <FaMapMarkerAlt className="flex-shrink-0 text-orange-500" />
+                  <p className="ml-2 text-sm text-gray-500">{event.address}</p>
+                </div>
+              </div>
+              <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
+                <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                  Get Tickets
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-gray-800 hover:bg-gray-900 transition-colors">
+            View All Events
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
